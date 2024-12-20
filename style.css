@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.wrapper {
+    background-image: url(images/pexels-jplenio-1103970.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.wrapper form {
+    width: 400px;
+    height: 450px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(0, 173, 144);
+    box-shadow: 4px 4px 10px rgb(10, 73, 63);
+    /* backdrop-filter: blur(10px) ; */
+    /*background-image: url(images/pexels-eberhardgross-2088203.jpg);
+    */border: none;
+    outline: none;
+    animation: animation1 1s ease;
+    padding: 20px 45px  ;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-animation: animation1 2s ease;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translatex(1000px);
+        -webkit-transform: translatex(1000px);
+        -moz-transform: translatex(1000px);
+        -ms-transform: translatex(1000px);
+        -o-transform: translatex(1000px);
+}
+    100% {
+        transform: translatex(0px);
+        -webkit-transform: translatex(0px);
+        -moz-transform: translatex(0px);
+        -ms-transform: translatex(0px);
+        -o-transform: translatex(0px);
+}
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    margin: 30px 0 ;
+    width: 100%;
+}
+
+.input-box input {
+    padding: 20px 40px ;
+    border: none;
+    outline: none;
+    /*background-color: transparent;
+    */border-bottom: 1px solid rgb(174, 12, 12);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.input-box input::placeholder {
+
+    font-size: 16px;
+    color: green;
+}
+
+
+.input-box img {
+    position: absolute;
+    right: 8px;
+    top: 13px;
+    width: 25px;
+}
+
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    accent-color: rgb(255, 0, 195);
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color:initial;
+}
+
+.remember-forgot a:hover {
+    color:rgb(255, 0, 195);
+    text-decoration: underline;
+} 
+
+.btn {
+    border: none ;
+    outline: none;
+    width: 100%;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.btn:hover {
+    background-color: rgb(255, 0, 195);
+    color: white;
+}
+
+.register {
+    text-align: center;
+}
+
+.register a {
+    text-decoration: none;
+    color: initial;
+    margin-left: 5px;
+}
+
+.register a:hover {
+    color:rgb(255, 0, 195) ;
+    text-decoration: underline;
+}
+
+
+@media (max-width : 400px) {
+   .wrapper { 
+    padding: 5px 10px;
+   }
+
+   .wrapper form {
+    padding: 5px 10px;
+    margin: px;
+   }
+
+   h1 {
+    padding: 10px 0;
+   }
+
+   .input-box input::placeholder {
+    font-size: 14px;
+    color: red;
+    font-weight: 300px;
+   }
+
+   .input-box img {
+    width: 20px;
+    top: 15px;
+   }
+
+   .remember-forgot a:hover {
+    color: red;
+   }
+
+   .remember-forgot {
+    accent-color: red;
+
+   }
+   .btn {
+    width: 100%;
+    padding: 10px 20px;
+   }
+
+   .register a:hover {
+    color: red ; 
+}
+    .btn:hover {
+    background-color: red;
+    color: white;
+}
+
+    .register {
+    position: relative;
+}
+/* 
+.register::after {
+    content: "";
+    border-bottom: 2px solid red ;
+    width: 150px ;
+    position: absolute;
+    top: 50px;
+    right: 20%;
+} */
+
+}
