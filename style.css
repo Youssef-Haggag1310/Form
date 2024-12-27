@@ -6,10 +6,11 @@
 
 body {
     overflow: hidden;
+    color: white;
 }
 
 .wrapper {
-    background-image: url(images/pexels-jplenio-1103970.jpg);
+    background-image: url(images/pexels-asadphoto-3293148.jpg);
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -23,21 +24,18 @@ body {
 .wrapper form {
     width: 400px;
     height: 450px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(0, 173, 144);
-    box-shadow: 4px 4px 10px rgb(10, 73, 63);
-    /* backdrop-filter: blur(10px) ; */
-    /*background-image: url(images/pexels-eberhardgross-2088203.jpg);
-    */border: none;
+    backdrop-filter: blur(100px);
+    box-shadow: 1px 1px 3px  rgb(2, 228, 81) ,  -1px -1px 3px rgb(2, 228, 81) ;
+    border: 1px solid  rgb(2, 228, 81);
     outline: none;
     animation: animation1 1s ease;
-    padding: 20px 45px  ;
+    padding: 20px  ;
+    border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    -webkit-animation: animation1 2s ease;
+    -webkit-animation: animation1 1s ease;
 }
 
 @keyframes animation1 {
@@ -64,26 +62,21 @@ h1 {
 .input-box {
     position: relative;
     margin: 30px 0 ;
-    width: 100%;
 }
 
 .input-box input {
-    padding: 20px 40px ;
+    padding: 20px 20px ;
     border: none;
     outline: none;
-    /*background-color: transparent;
-    */border-bottom: 1px solid rgb(174, 12, 12);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-bottom: 1px solid   rgb(2, 228, 81);
+    background-color: transparent;
 }
 
 .input-box input::placeholder {
 
     font-size: 16px;
-    color: green;
+    color: #918DAD;
+    padding: 5px;
 }
 
 
@@ -104,16 +97,17 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    accent-color: rgb(255, 0, 195);
+    accent-color:  rgb(2, 228, 81);
 }
 
 .remember-forgot a {
     text-decoration: none;
     color:initial;
+    color:  rgb(2, 228, 81);
 }
 
 .remember-forgot a:hover {
-    color:rgb(255, 0, 195);
+    color: rgb(228, 119, 2);
     text-decoration: underline;
 } 
 
@@ -121,23 +115,25 @@ h1 {
     border: none ;
     outline: none;
     width: 100%;
-    padding: 20px 40px;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: 0.5s ease;
+    transition: 0.6s ease;
+    font-size: 16px;
+    font-weight: 700;
     margin-bottom: 10px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
+    -webkit-transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
 }
 
 .btn:hover {
-    background-color: rgb(255, 0, 195);
+    background-color: rgb(228, 119, 2);
     color: white;
 }
 
@@ -149,71 +145,96 @@ h1 {
     text-decoration: none;
     color: initial;
     margin-left: 5px;
+    color:  rgb(2, 228, 81);
 }
 
 .register a:hover {
-    color:rgb(255, 0, 195) ;
+    color:rgb(228, 119, 2);
     text-decoration: underline;
 }
 
+.welcome {
+    visibility: hidden;
+}
 
-@media (max-width : 400px) {
-   .wrapper { 
-    padding: 5px 10px;
-   }
 
-   .wrapper form {
-    padding: 5px 10px;
-    margin: px;
-   }
+@media (max-width : 767px) {
 
-   h1 {
-    padding: 10px 0;
-   }
+    .wrapper form {
+        width: 360px;
+        height: 500px;
+    }
 
-   .input-box input::placeholder {
+    .welcome {
+        font-size: 40px ;
+        text-shadow: 5px 4px 10px  rgb(2, 228, 81);
+        text-align: center;
+        margin-top: 30px;
+        text-transform: capitalize;
+        visibility: visible;
+    }
+}
+@media (max-width : 370px) {
+
+    .wrapper form {
+        width: 260px;
+        height: 450px;
+    }
+
+    .welcome {
+        margin-top: 5px;
+        text-transform: capitalize;
+        visibility: visible;
+    }
+
+    
+.input-box input::placeholder {
+    font-size: 12px;
+    color: #918DAD;
+    padding: 2px;
+}
+
+.remember-forgot {
     font-size: 14px;
-    color: red;
-    font-weight: 300px;
-   }
-
-   .input-box img {
-    width: 20px;
-    top: 15px;
-   }
-
-   .remember-forgot a:hover {
-    color: red;
-   }
-
-   .remember-forgot {
-    accent-color: red;
-
-   }
-   .btn {
-    width: 100%;
-    padding: 10px 20px;
-   }
-
-   .register a:hover {
-    color: red ; 
-}
-    .btn:hover {
-    background-color: red;
-    color: white;
 }
 
-    .register {
-    position: relative;
+.btn {
+    font-size: 12px;
+    padding: 8px 15px;
 }
-/* 
-.register::after {
-    content: "";
-    border-bottom: 2px solid red ;
-    width: 150px ;
-    position: absolute;
-    top: 50px;
-    right: 20%;
-} */
+.register {
+    font-size: 12px ;
+}
+@media (max-width : 260px) {
 
+    .wrapper form {
+        width: 270px;
+        height: 420px;
+        margin: 0 10px;
+    }
+
+    .welcome {
+        margin-top: 5px;
+        text-transform: capitalize;
+        visibility: visible;
+    }
+
+    
+.input-box input::placeholder {
+    font-size: 12px;
+    color: #918DAD;
+    padding: 2px;
+}
+
+.remember-forgot {
+    font-size: 10px;
+}
+
+.btn {
+    font-size: 10px;
+    padding: 8px 15px;
+}
+.register {
+
+    font-size: 10px ;
 }

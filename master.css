@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: initial;
+}
+
+.wrapper {
+    background-image: url("images/pexels-laker-6156527.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+form {
+    background-color:#5D9798;
+    backdrop-filter: blur(10px);
+    height: 700px;
+    width: 600px;
+    padding: 20px ;
+    position: absolute;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px ;
+    font-weight: 700;
+    position: relative;
+}
+
+
+
+.input-box2 {
+    margin: 10px 0;
+}
+
+.input-box2 label {
+    font-size: 18px;
+}
+
+.input-box2 input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.input-box2 input::placeholder {
+    font-size: 16px;
+    /* color: white; */
+}
+
+.input-box3 {
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.input-box3 input {
+    accent-color:  #592918 ;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px 20px ;
+    margin: 40px 0;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    transition: 0.6s ease;
+    cursor: pointer;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    -webkit-transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+}
+
+.btn:hover {
+    background-color: #592918;
+    color: white;
+}
+
+.welcome {
+    font-size: 32px;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 10px  #592918 , -5px -5px 10px  #592918;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width : 767px) {
+    form {
+        height: 500px;
+        width: 400px;
+        padding: 20px ;
+    }
+}
+
+@media (max-width : 455px) {
+    form {
+        height: 90vh;
+        width: 400px;
+        padding: 20px ;
+    }
+
+    .input-box2 input {
+        margin: 5px 0;
+    }
+
+    .welcome {
+        margin-top: 40px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width : 400px) {
+    form {
+        height: 90vh;
+        width: 200px;
+        padding: 20px ;
+        font-size: 14px;
+    }
+
+    .input-box2 input {
+        font-size: 14px;
+    }
+
+}
