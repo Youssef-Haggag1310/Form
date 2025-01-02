@@ -109,6 +109,7 @@ h3 {
     text-shadow: 5px 5px 10px  #592918 , -5px -5px 10px  #592918;
     text-align: center;
     color: white;
+    visibility: hidden;
 }
 
 @media (max-width : 767px) {
@@ -116,12 +117,12 @@ h3 {
         height: 500px;
         width: 400px;
         padding: 20px ;
-    }
+}
 }
 
 @media (max-width : 455px) {
     form {
-        height: 90vh;
+        height: 90%;
         width: 400px;
         padding: 20px ;
     }
@@ -133,6 +134,7 @@ h3 {
     .welcome {
         margin-top: 40px;
         font-size: 40px;
+        visibility: visible;
     }
 }
 
